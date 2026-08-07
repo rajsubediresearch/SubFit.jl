@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------
+# SubFit.jl
+# ---------------------------------------------------------------------
+
+# Julia environments. Manifest.toml pins exact versions of every transitive
+# dependency -- right for an application, wrong for a library, since it would
+# force these resolved versions on anyone who installs SubFit. Project.toml
+# with compat bounds is the contract.
+Manifest.toml
+**/Manifest.toml
+
+# Julia build artifacts
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+/docs/build/
+/docs/site/
+deps/deps.jl
+deps/build.log
+LocalPreferences.toml
+
+# Analysis output: fully regenerable by re-running the scripts, and it grows
+# fast (PNGs and per-origin CSVs per dataset x analysis). Each run writes a
+# settings.txt recording the parameters AND the gate verdicts, so a result is
+# reproducible from its config rather than retrieved from git.
+output/
+!output/.gitkeep
+
+# Input data IS committed: the four series are small (<300 KB) and come from
+# the public SubEpiPredict toolbox, and the examples do not run without them.
+# Exclude larger or non-public data added later, e.g.:
+#   input/private/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch
+scratch/
+tmp/
+*.log

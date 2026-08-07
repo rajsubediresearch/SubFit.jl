@@ -1,0 +1,7 @@
+# Repo stores LF; Windows checkouts get CRLF.
+* text=auto eol=lf
+*.jl text
+*.md text
+*.toml text
+*.txt text
+*.png binary

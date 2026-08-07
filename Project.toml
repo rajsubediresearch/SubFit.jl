@@ -1,0 +1,29 @@
+name = "SubFit"
+uuid = "3f8a1c62-9d47-4b1e-a7c5-2e6b0d4f9a13"
+version = "0.1.0-dev"
+authors = ["Raj Subedi"]
+
+[deps]
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+NLopt = "76087f3c-5699-56af-9a33-bf431cd00edd"
+OrdinaryDiffEqTsit5 = "b1df2697-797e-41e3-8120-5422d3b24e4a"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SciMLBase = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+DelimitedFiles = "1.9.1"
+LinearAlgebra = "1.12.0"
+Logging = "1.11.0"
+NLopt = "1.2.1"
+OrdinaryDiffEqTsit5 = "2.1.2"
+Printf = "1.11.0"
+Random = "1.11.0"
+SciMLBase = "3.41.0"
+Statistics = "1.11.1"
+Test = "1.11.0"
+julia = "1.10"
